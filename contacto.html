@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <header class="text-center">
+                <a href="index.html">
+                    <img src="imag/log2.jpg" alt="logo" class="logoP"></a>
+            </header>
+            <nav>
+                <div id="navMenu">
+                        <a href="index.html">Inicio</a>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="presupuesto.html">Presupuesto</a>
+                        <a href="contacto.html">Contacto</a>
+                </div>
+             </nav>
+   
+    <div class="contact-section">
+        <div class="contact-info">
+          <h2>Información de Contacto</h2>
+          <img src="imag/fachada.jpg" alt="Fachada de La Dellicia Pastelería" class="fachada-img" onclick="toggleSize(this)"><br>
+          <p><strong>Nombre:</strong> Dulce Encanto Pasteleria</p>
+          <p><i class="fas fa-map-marker-alt"></i> Calle Sol y Padriss 7, Barcelona, España</p>
+          <p><i class="fas fa-envelope"></i> contacto@miempresa.com</p>
+          <p><i class="fas fa-phone"></i> +123 456 7890</p>
+        </div>
+        <div class="map-container">
+          <h2>Encuéntranos Aquí</h2>
+          <iframe 
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8447.021864349947!2d2.117775392727545!3d41.53735004892794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a495a418c57dd5%3A0x33ad9180b8cf4abc!2sPanaderia%20%26%20Pasteleria%20La%20Delicia!5e0!3m2!1ses!2ses!4v1741105099216!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </iframe>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+            <div class="social">
+                <p>Síguenos</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="info">
+                <p><strong>Dulce Encanto Pastelería</strong></p>
+                <p>Calle Sol y Padris 7 - Barcelona</p>
+                <p>&copy; 2025 | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleSize(img) {
+            img.classList.toggle("zoom");
+        }
+        </script>
+</body>
+</html>

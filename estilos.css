@@ -1,0 +1,308 @@
+:root{
+  --colorPrimario:#9600ff;
+  --colorSecundario:#f6c5ff;
+  --colorComplementario:#ff9000;
+}
+body {
+  background: url(imag/fondopasteleria.avif);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+/* ------ Contenedor principal-----*/
+.container {
+  background: url(imag/fondomatizado.webp);
+  max-width: 1100px;
+  margin: auto;
+  padding: 1px;
+}
+.logoP {
+  width: 200px;
+  border: 5px solid violet;
+  display: block;
+  margin: 20px auto;
+}
+/*   menu de navegacion    */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ff6b81; /* Color pastel */
+  text-align: center;
+  padding: 15px 0;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 35px;  /*espacia entre  enlaces*/
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: #ff4757;
+  border-bottom: 2px solid #c0392b; /* Efecto de subrayado al pasar el cursor */
+  border-radius: 5px;
+}
+/*    Fin Navegacion */
+/*------------F O O T E R ----------------*/
+footer {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #ff6b81;
+  border-radius: 10px;
+  color: #5a2d2e;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.social p{
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.social a {
+  color:  #5a2d2e;
+  font-size: 20px;
+  margin: 0 px;
+  transition: transform 0.3s ease-in-out, color 0.3s;
+}
+.social a:hover {
+  transform: scale(1.2);
+  color: #c0392b;
+}
+.info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+/* F I N   F O O T E R    */
+img{
+  max-width: 100%;   
+  border-radius: 20px; 
+}
+.text-center{
+  text-align: center;
+}
+/* I N I C I O     HTML */
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+.gallery div{
+  border: 3px solid var(--colorComplementario);
+  border-radius: 10px;
+  text-align: center;
+}
+.gallery div img{
+  border-radius: 10px;
+}
+.button{
+  background-color: #9600ff;
+  color: white;
+  padding: 10px;   
+  border-radius: 10px; 
+  text-decoration: none;
+}
+.section img{
+  border: 3px solid var(--colorComplementario);
+  border-radius: 10px;
+}
+.content{
+  padding: 16px;
+}
+.sections {
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos equitativamente */
+  text-align: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+.section {
+  flex: 1; /* Hace que cada sección ocupe el mismo espacio */
+  max-width: 300px; /* Limita el tamaño de cada sección */
+}
+.section img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+.section h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.section p {
+  font-size: 1em;
+  color: #555;
+}
+/*---- TITULOS -----*/
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin: 30px 0;
+}
+/* G A L E R I A   H T M L    */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.producto {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 5px solid orange;
+}
+.producto img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.producto button{
+  background-color: #ff9000;
+  color: white;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.descripcion {
+  display: none;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+/* Efecto hover en las imágenes */
+.producto:hover {
+  transform: scale(1.05);
+}
+.producto img:hover {
+  transform: scale(1.05); /*  efecto zoom al pasar el mousse*/
+}
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .galeria {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+/*------------F I N   G A L E R I A -------------------*/
+.text-center {
+  text-align: center;  
+}
+.content {
+  margin: 0 auto;
+  display: center;
+  padding: 10PX;
+  text-align: center;
+}
+
+ /*  PRESUPUESTO --HTML - Elemento de formulario*/
+ form {
+     width: 450px;
+     margin: auto;
+     background: palevioletred;
+     padding: 10px 20px;
+     box-sizing: border-box;
+     margin-top: 30px;
+     border-radius: 7px;
+     margin-bottom: 90px;
+ }
+ h2 {
+     color: black;
+     text-align: center;
+     margin: 0;
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+ input, textarea{
+     width: 100%;
+     margin-bottom: 20px;
+     padding: 7px;
+     box-sizing: border-box;
+     font-size: 18px;
+     border: none;
+ }
+ textarea {
+     min-height: 100px;
+     max-height: 200px;
+     max-width: 100%;
+ }
+ #boton {
+     bottom: 24px;
+ }
+ #boton:hover {
+     cursor: pointer;
+     transition: all 0.3s;
+ }
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre la política y el botón */
+}
+#enviar {
+  background-color: #ff5733; /* Cambia el color del botón */
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#enviar:hover {
+  background-color: #c70039; /* Efecto hover */
+}
+ /* C O N T A C T O  HTML------------*/
+ .contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.contact-info, .map-container {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  border: 5px solid orange;
+}
+.contact-info {
+  width: 150px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid orange;
+}
+.fachada-img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 100%; /* evita salir de la pantalla */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.fachada-img.zoom {
+  transform: scale(1.8); /* Agranda la imagen */
+}
+.contact-info p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+.map-container{
+  background: white;
+  border-radius: 10px;
+}
+.map-container iframe {
+  width: 100%;
+}

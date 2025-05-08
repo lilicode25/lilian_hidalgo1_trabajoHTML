@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+        <div class="container">
+            <header class="text-center">
+                <a href="index.html">
+                    <img src="imag/log2.jpg" alt="logo" class="logoP"></a>
+            </header>
+            <nav>
+                <div id="navMenu">
+                        <a href="index.html">Inicio</a>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="presupuesto.html">Presupuesto</a>
+                        <a href="contacto.html">Contacto</a>
+                </div>
+             </nav>
+             <article class="article">
+                <section class="section-form">
+                    <form id="pedidoForm">
+                        <h2>Pedidos</h2>
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" autofocus>
+                        <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="email" name="correo" id="correo" placeholder="Email" required>
+                        <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
+
+                        <input type="date" name="fechaEntrega" id="fechaEntrega" required>
+                        <textarea name="Mensaje" id="mensaje" placeholder="Especifique su pedido" required></textarea>
+                        <button type="reset" id="reset">Limpiar</button>
+                        <div class="form-footer">
+                            <input type="checkbox" id="acepto">
+                            <label for="acepto">Acepto la <a href="#">Política de Privacidad</a></label>
+                            <button id="enviar">Enviar</button>
+                        </div>
+
+                    </form>
+                </section>
+            </article>
+            <script>
+                document.getElementById('pedidoForm').addEventListener('submit', function(event) {
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const apellido = document.getElementById('apellido').value.trim();
+                    const correo = document.getElementById('correo').value.trim();
+                    const telefono = document.getElementById('telefono').value.trim();
+                    const mensaje = document.getElementById('mensaje').value.trim();
+                    const acepto = document.getElementById('acepto').checked;
+            
+                    if (!nombre || !apellido || !correo || !telefono || !mensaje || !acepto) {
+                        alert("Todos los campos son obligatorios y debes aceptar la Política de Privacidad.");
+                        event.preventDefault(); // Evita que el formulario se envíe si hay errores.
+                    }
+                });
+            </script>
+             <footer>
+                <div class="footer-container">
+                    <div class="social">
+                        <p>Síguenos</p>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="info">
+                        <p><strong>Dulce Encanto Pastelería</strong></p>
+                        <p>Calle Sol y Padris 7 - Barcelona</p>
+                        <p>&copy; 2025 | Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
+
+

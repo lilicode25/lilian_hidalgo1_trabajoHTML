@@ -6,81 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descubre nuestra galería de tortas, pasteles y dulces personalizados.">
     <meta name="keywords" content="pastelería, tortas, pasteles, bocaditos, Barcelona, repostería personalizada">
-    <title>Pasteleria Dulcinea | Tortas y pasteles personalizados en Barcelona</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Galeria</title>
+  
+    <!-- CSS CORRECTO -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <header class="logo-header">
-            <a href="index.html">
-                <img src="imag/logoD.jpeg" alt="logo" class="logoP">
+
+        <header class="header">
+            <!-- LOGO CORREGIDO -->
+            <a href="index.html" class="logo">
+                <img src="../img/logoD.jpeg" alt="logo">
             </a>
+
+            <nav>
+                <ul id="navMenu">
+                    <!-- RUTAS CORREGIDAS -->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html" class="active">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <nav>
-            <div id="navMenu">
-                <a href="index.html">Inicio</a>
-                <a href="galeria.html">Galería</a>
-                <a href="presupuesto.html">Presupuesto</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-        </nav>
-
         <main class="contend">
+
             <!-- TORTAS -->
             <section>
                 <h1 class="title">Galería de Productos</h1>
                 <div class="galeria">
-                    <!-- Producto 1 -->
+               
                     <div class="producto">  
                         <div class="img-container">
-                            <img src="imag/tortas/torta1.jpg" alt="Torta Chantilly" width="681" height="681">
+                            <img src="../img/tortas/torta1.jpg" alt="Torta Chantilly" width="681" height="681">
                         </div>
                         <h2>Torta de Chantilly</h2>
                         <p class="precio">€ 35</p>
                     </div>
-                    <!-- Producto 2 -->
+
                     <div class="producto">   
                         <div class="img-container">
-                            <img src="imag/tortas/torta6.jpeg" alt="Torta Helada" width="236" height="214">
+                            <img src="../img/tortas/torta6.jpeg" alt="Torta Helada" width="236" height="214">
                         </div>
                         <h2>Torta Helada</h2>
                         <p class="precio">€ 35</p>
                     </div>
-                    <!-- Producto 3 -->
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/tortas/torta3.jpg" alt="Torta de Chocolate" width="704" height="599">
+                            <img src="../img/tortas/torta3.jpg" alt="Torta de Chocolate" width="704" height="599">
                         </div>
                         <h2>Torta de Chocolate</h2>
                         <p class="precio">€ 35</p>
                     </div>
-                    <!-- Producto 4 -->
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/tortas/torta10.jpg" alt="Torta de Cumpleaños" width="736" height="736">
-                        </div>
-                        <h2>Torta de Cumpleaños</h2>
-                        <p class="precio">€ 35</p>
-                    </div>
-                    <!-- Producto 5 -->
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/tortas/torta8.jpg" alt="Torta decorada con flores de crema" width="736" height="754">
-                        </div>
-                        <h2>Torta Margarita</h2>
-                        <p class="precio">€ 35</p>
-                    </div>
-                    <!-- Producto 6 -->
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/tortas/torta12.jpg" alt="Torta de vainilla" width="736" height="802">
-                        </div>
-                        <h2>Torta Florencia</h2>
-                        <p class="precio">€ 35</p>
-                    </div>
+                    
                 </div>
             </section>
 
@@ -88,48 +72,31 @@
             <section>
                 <h2 class="title">Pasteles y Bocaditos</h2>
                 <div class="galeria">
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/pasteles/pastelmanz.webp" alt="Pastel de manzana" width="425" height="264">
+                            <img src="../img/pasteles/pastelmanz.webp" alt="Pastel de manzana" width="425" height="264">
                         </div>
                         <h2>Pastel de Manzana</h2>
                         <p class="precio">€ 25</p>
                     </div>
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/pasteles/pasacelga.jpg" alt="Pastel de Acelga" width="1280" height="720">
+                            <img src="../img/pasteles/pasacelga.jpg" alt="Pastel de Acelga" width="1280" height="720">
                         </div>
                         <h2>Pastel de Acelga</h2>
                         <p class="precio">€ 25</p>
                     </div>
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/pasteles/lecheasada.jpg" alt="Leche asada" width="680" height="482">
+                            <img src="../img/pasteles/lecheasada.jpg" alt="Leche asada" width="680" height="482">
                         </div>
                         <h2>Crema Volteada</h2>
                         <p class="precio">€ 25</p>
                     </div>
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/pasteles/pionono.jpg" alt="Pionono de manjarblanco" width="181" height="148">
-                        </div>
-                        <h2>Pionono</h2>
-                        <p class="precio">€ 25</p>
-                    </div>
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/pasteles/alfajores.jpg" alt="Alfajores" width="380" height="253">
-                        </div>
-                        <h2>Alfajores</h2>
-                        <p class="precio">€ 20</p>
-                    </div>
-                    <div class="producto">
-                        <div class="img-container">
-                            <img src="imag/pasteles/bocadillop.png" alt="Bocadillos de pollo" width="1200" height="660">
-                        </div>
-                        <h2>Petipán de Pollo</h2>
-                        <p class="precio">€ 25</p>
-                    </div>
+
                 </div>
             </section>
 
@@ -137,47 +104,51 @@
             <section>
                 <h3 class="title">Especiales</h3>
                 <div class="galeria">
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/tortas/tortae1.jpg" alt="Torta de matrimonio" width="467" height="700">
+                            <img src="../img/tortas/tortae1.jpg" alt="Torta de matrimonio" width="467" height="700">
                         </div>
                         <h2>Torta de Bodas</h2>
                         <p class="precio">€ 45</p>
                     </div>
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/tortas/tortae3.jpg" alt="Torta de quinceaños" width="621" height="900">
+                            <img src="../img/tortas/tortae3.jpg" alt="Torta de quinceaños" width="621" height="900">
                         </div>
                         <h2>Torta Quinceañera</h2>
                         <p class="precio">€ 45</p>
                     </div>
+
                     <div class="producto">
                         <div class="img-container">
-                            <img src="imag/tortas/tortae4.jpg" alt="Torta infantil" width="736" height="880">
+                            <img src="../img/tortas/tortae4.jpg" alt="Torta infantil" width="736" height="880">
                         </div>
                         <h2>Torta Motivos Infantiles</h2>
                         <p class="precio">€ 45</p>
                     </div>
+
                 </div>
-            </section>  
+            </section>
         </main>
 
-        <!-- PIE DE PÁGINA -->
         <footer>
             <div class="footer-container">
                 <div class="social">
-                    <p><strong>Síguenos</strong></p>
+                     <p><strong>Síguenos</strong></p>
                     <a href="https://www.facebook.com/DulceEncantoPasteleria" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/DulceEncantoPasteleria" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/DulceEncantoPast" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
+
                 <div class="info">
                     <p><strong>Pastelería Dulcinea</strong></p>
                     <p><strong>Calle Sol y Padris 7 - Barcelona</strong></p>
                     <p><strong>&copy; 2025 | Todos los derechos reservados</strong></p>
                 </div>
-            </div>
+            </div>   
         </footer>
+
     </div>
 </body>
 </html>

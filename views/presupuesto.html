@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Descubre nuestra galería de tortas, pasteles y dulces personalizados.">
-    <meta name="keywords" content="pastelería, tortas, pasteles, bocaditos, Barcelona, repostería personalizada">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Solicite su presupuesto personalizado para tortas, pasteles y bocaditos.">
+    <meta name="keywords" content="pastelería, presupuesto, tortas, dulces, pedidos especiales">
+
     <title>Presupuesto</title>
 
-    <!-- CSS CORRECTO -->
+    <!-- Archivo CSS principal -->
     <link rel="stylesheet" href="./../css/estilos.css">
 
+    <!-- Fuentes y librerías de iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
-        
+
+        <!-- ===================== CABECERA ===================== -->
         <header class="header">
-            <!-- LOGO con ruta corregida -->
+
+            <!-- Logo con ruta corregida -->
             <a href="./../index.html" class="logo">
                 <img src="./../img/logoD.jpeg" alt="logo">
             </a>
 
+            <!-- Menú de navegación -->
             <nav>
                 <ul id="navMenu">
                     <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="galeria.html">Galería</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <!-- Enlace activo en esta página -->
                     <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <h1 class="title" style="text-align:center; font-family:'Dancing Script',cursive;">
+        <!-- Título principal -->
+        <h1 class="title" style="text-align:center; font-family:'Dancing Script', cursive;">
             Solicite su Presupuesto
         </h1>
 
+        <!-- ===================== FORMULARIO ===================== -->
         <section class="form-register">
+
             <h4>Solicite información</h4>
 
+            <!-- 
+                * El formulario utiliza método GET por simplicidad.
+                * Utiliza ancla #gracias para mostrar mensaje de éxito.
+            -->
             <form action="#gracias" method="get">
 
+                <!-- Campo de nombre -->
                 <input class="controls" type="text" name="nombres" id="nombres"
                     placeholder="Ingrese su Nombre"
                     pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}$"
                     title="Solo letras y espacios, mínimo 2 caracteres"
                     required>
 
+                <!-- Campo de teléfono validado -->
                 <input class="controls" type="tel" name="telefono" id="telefono"
                     placeholder="Ingrese su Teléfono"
                     pattern="^[6-9][0-9]{8}$"
                     title="Debe contener 9 cifras y empezar por 6, 7, 8 o 9"
                     required>
 
+                <!-- Campo correo electrónico -->
                 <input class="controls" type="email" name="correo" id="correo"
                     placeholder="Ingrese su Correo"
                     required>
 
-                <input class="controls" type="text" name="pedido" id="pedido"
-                    placeholder="Describa su pedido"
-                    pattern="^.{10,}$"
-                    title="Debe describir el pedido con al menos 10 caracteres"
-                    required>
+                <!-- Campo multilínea para descripción del pedido -->
+                <textarea class="controls" name="pedido" id="pedido"
+                    placeholder="Describa su pedido (mínimo 15 caracteres)"
+                    minlength="15"
+                    title="Debe describir el pedido con al menos 15 caracteres"
+                    required></textarea>
 
+                <!-- Aceptación de política de privacidad -->
                 <div class="terminos">
                     <input type="checkbox" id="privacidad" required>
                     <label for="privacidad">
@@ -72,38 +93,34 @@
                     </label>
                 </div>
 
+                <!-- Botón de envío -->
                 <input class="botons" type="submit" value="Enviar solicitud">
             </form>
         </section>
 
-        <!-- Mensaje éxito -->
+        <!-- ===================== MENSAJE DE ENVÍO ===================== -->
+        <!-- Se muestra solo cuando la URL contiene #gracias -->
         <p id="gracias">✅ ¡Su solicitud se ha enviado correctamente!</p>
 
-        <!-- Política opcional -->
-        <!--
-        <section id="privacidad-info">
-            <h3>Política de Privacidad</h3>
-            <p>Sus datos personales serán tratados con confidencialidad...</p>
-            <a href="#">⬅ Volver al formulario</a>
-        </section>
-        -->
 
-        <footer style="background:#b3204b;color:white;text-align:center;padding:15px 0;">
-            <div class="social">
-                <p><strong>Síguenos</strong></p>
-                <a href="https://www.facebook.com/DulceEncantoPasteleria" target="_blank" style="color:white;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/DulceEncantoPasteleria" target="_blank" style="color:white;margin-left:10px;">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+        <!-- ===================== PIE DE PÁGINA ===================== -->
+        <footer>
+            <div class="footer-container">
 
-            <div class="info" style="margin-top:10px;">
-                <p><strong>Pastelería Dulcinea</strong></p>
-                <p><strong>Calle Sol y Padris 7 - Barcelona</strong></p>
-                <p><strong>&copy; 2025 | Todos los derechos reservados</strong></p>
-            </div>
+                <!-- Redes sociales -->
+                <div class="social">
+                    <p><strong>Síguenos</strong></p>
+                    <a href="https://www.facebook.com/DulceEncantoPasteleria" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/DulceEncantoPasteleria" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="info">
+                    <p><strong>Pastelería Dulcinea</strong></p>
+                    <p><strong>Calle Sol y Padris 7 - Barcelona</strong></p>
+                    <p><strong>&copy; 2025 | Todos los derechos reservados</strong></p>
+                </div>
+            </div>   
         </footer>
 
     </div>

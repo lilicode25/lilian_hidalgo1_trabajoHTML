@@ -364,6 +364,25 @@ nav ul li a.activo::after {
       display: block;
     }
 
+    textarea.controls {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    min-height: 90px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+textarea:valid {
+    border-color: #8fd38f;
+}
+
+textarea:invalid {
+    border-color: #e57373;
+}
 /* ========== MODAL ========= */
 .modal {
   display: none;

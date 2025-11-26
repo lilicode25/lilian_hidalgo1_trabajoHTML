@@ -426,7 +426,7 @@ textarea:invalid {
 }
 
 /* ========== CONTACTO ========= */
-a.activo {
+a.active {
   color: white;
   background-color: #007bff;
   border-radius: 5px;
